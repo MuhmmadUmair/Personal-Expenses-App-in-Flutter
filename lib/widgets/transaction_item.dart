@@ -42,12 +42,12 @@ class TransactionItem extends StatelessWidget {
                 ),
                 onPressed: () => deleteTx(transactions.id),
                 style: TextButton.styleFrom(
-                  foregroundColor: Theme.of(context).errorColor,
+                  foregroundColor: Theme.of(context).colorScheme.error,
                 ),
               )
             : IconButton(
                 icon: const Icon(Icons.delete),
-                color: Theme.of(context).errorColor,
+                color: Theme.of(context).colorScheme.error,
                 onPressed: () => deleteTx(transactions.id),
               ),
       ),
